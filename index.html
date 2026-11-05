@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#176b4d">
+<title>My Environmental Action Plan: Protecting Philippine Ecosystems</title>
+<style>
+:root{--green:#176b4d;--deep:#104b38;--leaf:#6da875;--blue:#247b9b;--earth:#9b7047;--ink:#20332b;--muted:#65776d;--line:#dce8df;--pale:#f1f8f2;--white:#fff;--shadow:0 9px 26px rgba(24,76,53,.08);--radius:19px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f6faf7;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.58}button,textarea,select{font:inherit}button{cursor:pointer}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}
+.hero{background:linear-gradient(125deg,#104b38,#176b4d 58%,#247b9b);color:#fff;padding:27px 0 45px;position:relative;overflow:hidden}.hero:after{content:"🌳  🌿  🌊";position:absolute;right:4%;bottom:12px;font-size:clamp(2.3rem,6vw,5rem);opacity:.25;white-space:nowrap}.hero-inner{position:relative;z-index:1}.topline{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:.08em;border:1px solid #ffffff55;border-radius:99px;padding:6px 11px;background:#ffffff12}.language{display:flex;align-items:center;gap:8px}.language label{font-size:.88rem;font-weight:700}.language select{max-width:100%;border:1px solid #ffffff77;background:#ffffff18;color:#fff;border-radius:10px;padding:8px 30px 8px 10px;font-weight:700}.language option{color:#20332b;background:#fff}
+h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.08;letter-spacing:-.04em;margin:22px 0 12px;max-width:900px}.hero p{color:#e3f2e9;max-width:790px;margin:0;font-size:1.02rem}
+main{padding:26px 0 55px}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:23px;margin-bottom:19px}.heading{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:13px}h2{font-size:1.3rem;line-height:1.25;margin:0 0 7px;letter-spacing:-.02em}h3{font-size:1rem;margin:0 0 5px}.muted{color:var(--muted);margin:0;font-size:.93rem}.objective{display:flex;gap:14px;align-items:flex-start}.objective-icon{flex:0 0 46px;height:46px;display:grid;place-items:center;border-radius:14px;background:#eaf5ec;font-size:1.5rem}.objective-text{font-size:1rem;color:#355547;margin:3px 0 0}
+.toolbar{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.btn{border:0;border-radius:11px;padding:10px 15px;font-weight:750;transition:.18s;min-height:42px}.btn:hover{transform:translateY(-1px)}.primary{background:var(--green);color:white}.soft{background:#eaf5ec;color:var(--deep)}.outline{background:#fff;color:var(--green);border:1px solid #b9d4c1}.danger{background:#fff0ec;color:#9d402b}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}.stat{background:#f6faf7;border:1px solid var(--line);border-radius:14px;padding:13px}.stat strong{display:block;font-size:1.7rem;line-height:1.15;color:var(--green);letter-spacing:-.04em}.stat span{font-size:.82rem;color:var(--muted);font-weight:700}.progress-track{height:13px;background:#e8efe9;border-radius:99px;overflow:hidden;margin:15px 0 7px}.progress-fill{height:100%;width:0;background:linear-gradient(90deg,#69a96d,#247b9b);border-radius:99px;transition:width .3s}.progress-meta{display:flex;justify-content:space-between;gap:12px;font-size:.87rem;color:var(--muted)}.complete{display:none;margin-top:13px;padding:12px 14px;border-radius:12px;background:#e9f7ed;color:#175b3c;font-weight:750}.complete.show{display:block}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.impact-item{border:1px solid var(--line);background:#fbfdfb;border-radius:14px;padding:13px}.impact-head{display:flex;justify-content:space-between;gap:8px;font-size:.9rem;font-weight:750}.mini-track{height:9px;background:#eaf0eb;border-radius:99px;overflow:hidden;margin-top:9px}.mini-fill{height:100%;width:0;border-radius:99px;transition:width .3s}.forest{background:#5c9b63}.pollution{background:#3290b0}.bio{background:#a17b45}.caveat{font-size:.78rem;color:var(--muted);margin:11px 0 0}
+.action-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.action{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff;transition:background .2s,border-color .2s,transform .2s;min-width:0}.action:hover{transform:translateY(-2px);box-shadow:0 7px 18px #194b3510}.action.checked{background:#f3faf4;border-color:#75b182;box-shadow:inset 0 0 0 1px #b7d9bd}.action-top{display:flex;align-items:flex-start;gap:11px}.check{appearance:none;flex:0 0 25px;width:25px;height:25px;border:2px solid #a9bdb0;border-radius:7px;background:white;margin:1px 0 0;position:relative;cursor:pointer}.check:checked{background:var(--green);border-color:var(--green)}.check:checked:after{content:"✓";position:absolute;inset:-1px 0 0;color:#fff;text-align:center;font-size:17px;font-weight:900}.action-title{font-weight:800;line-height:1.35;cursor:pointer}.number{color:var(--green);margin-right:4px}.tag{display:inline-block;margin-top:7px;border-radius:99px;padding:3px 9px;background:#eaf5ec;color:#28623c;font-size:.72rem;font-weight:800}.action-desc{font-size:.93rem;color:#43594e;margin:12px 0 8px}.action-impact{border-top:1px dashed var(--line);padding-top:9px;margin:0;color:#65776d;font-size:.84rem}.action-impact b{color:#365b48}
+.summary{background:linear-gradient(130deg,#eef7ef,#edf6f9);border:1px solid #d9eade;border-radius:14px;padding:16px;color:#355547}.summary p{margin:0}.selected-list{margin:12px 0 0;padding-left:20px;color:#52675c}.empty{color:#63756a}
+.problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:11px;margin-top:14px}.problem{border:1px solid #eee3d1;background:#f7f1e7;border-radius:14px;padding:14px}.problem:nth-child(2){background:#eaf5fa;border-color:#d8eaf1}.problem:nth-child(3){background:#eff6eb;border-color:#deead7}.problem .emoji{font-size:1.5rem}.problem p{font-size:.85rem;color:#586b60;margin:5px 0 0}
+.reflection textarea{width:100%;min-height:115px;resize:vertical;border:1px solid #cbdcd0;border-radius:13px;padding:13px;background:#fbfdfb;color:var(--ink);outline:none}.reflection textarea:focus{border-color:var(--green);box-shadow:0 0 0 3px #176b4d18}.preview{margin-top:12px;padding:13px;border-radius:12px;background:#f5f9f5;border:1px solid var(--line);display:none}.preview.show{display:block}.preview p{white-space:pre-wrap;margin:6px 0 0;color:#43594e}.notice{font-size:.85rem;font-weight:700;color:var(--green);min-height:1.4em;margin:8px 0 0}.footer{text-align:center;color:#718278;font-size:.83rem;padding:0 0 28px}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.impact-grid{grid-template-columns:1fr}.action-grid{grid-template-columns:1fr}.problem-grid{grid-template-columns:1fr}.card{padding:18px}}
+@media(max-width:420px){.wrap{width:calc(100% - 22px)}.topline{align-items:flex-start}.language{width:100%;justify-content:flex-start}.language select{flex:1}.toolbar .btn{flex:1 1 44%;font-size:.88rem;padding:9px}.stat strong{font-size:1.5rem}.progress-meta{font-size:.8rem}}
+@media print{body{background:#fff;color:#111;font-size:10.5pt}.hero{background:#fff!important;color:#111;padding:12px 0 18px;border-bottom:2px solid #176b4d}.hero p{color:#333}.language,.toolbar,.no-print,.footer{display:none!important}.eyebrow{color:#176b4d;background:#fff;border-color:#aaa}.wrap{width:100%}main{padding:10px 0}.card{box-shadow:none;border:1px solid #bbb;padding:13px;margin-bottom:10px;break-inside:avoid}.action-grid{grid-template-columns:1fr 1fr;gap:7px}.action{padding:9px;break-inside:avoid}.progress-fill,.mini-fill{-webkit-print-color-adjust:exact;print-color-adjust:exact}.problem-grid{grid-template-columns:repeat(3,1fr)}.complete{display:block!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="topline">
+      <span class="eyebrow" id="eyebrow">LEARN • ACT • PROTECT</span>
+      <div class="language"><label for="languageSelect" id="languageLabel">Language / Wika</label>
+        <select id="languageSelect" aria-label="Choose language">
+          <option value="en">English</option><option value="fil">Filipino</option><option value="bik">Bikol / Bicolano</option>
+        </select>
+      </div>
+    </div>
+    <h1 id="pageTitle">My Environmental Action Plan: Protecting Philippine Ecosystems</h1>
+    <p id="heroIntro">Small actions can make a big difference. Choose the steps you can take to care for our forests, waterways, wildlife, and communities.</p>
+  </div>
+</header>
+<main class="wrap">
+  <section class="card">
+    <div class="objective"><div class="objective-icon">🎯</div><div><h2 id="objectiveHeading">Learning Objective</h2><p class="objective-text" id="objectiveText">Explain how deforestation, pollution, and invasive species harm Philippine ecosystems.</p></div></div>
+  </section>
+
+  <section class="card">
+    <div class="heading"><div><h2 id="progressHeading">My Action Plan Progress</h2><p class="muted" id="progressHint">Your progress updates automatically as you select or clear actions.</p></div><span style="font-size:1.8rem">🌱</span></div>
+    <div class="stats">
+      <div class="stat"><strong id="totalCount">9</strong><span id="totalLabel">Total Actions</span></div>
+      <div class="stat"><strong id="doneCount">0</strong><span id="doneLabel">Completed</span></div>
+      <div class="stat"><strong id="remainingCount">9</strong><span id="remainingLabel">Remaining</span></div>
+      <div class="stat"><strong id="percentCount">0%</strong><span id="percentLabel">Completion</span></div>
+    </div>
+    <div class="progress-track" id="mainProgress" role="progressbar" aria-label="Action plan completion" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="progress-meta"><span id="progressCaption">0% completed</span><span id="fractionCaption">0 / 9 actions</span></div>
+    <div class="complete" id="completeMessage" role="status">🎉 Congratulations! You have completed every action in your plan.</div>
+  </section>
+
+  <section class="card">
+    <div class="heading"><div><h2 id="checklistHeading">My Environmental Actions</h2><p class="muted" id="checklistHint">Check each action you have completed or commit to doing.</p></div><span style="font-size:1.8rem">🌿</span></div>
+    <div class="toolbar no-print">
+      <button class="btn primary" id="selectAll">Select All</button>
+      <button class="btn soft" id="clearAll">Clear All</button>
+      <button class="btn outline" id="resetPlan">Reset Checklist</button>
+    </div>
+    <div class="action-grid" id="actionGrid" style="margin-top:16px"></div>
+  </section>
+
+  <section class="card">
+    <div class="heading"><div><h2 id="impactHeading">My Environmental Impact</h2><p class="muted" id="impactHint">See how your selected actions can help address environmental problems.</p></div><span style="font-size:1.8rem">🌏</span></div>
+    <div class="summary" aria-live="polite"><p id="dynamicSummary">Choose one or more actions to generate your environmental impact summary.</p><ul class="selected-list" id="selectedActionsList" hidden></ul></div>
+    <h3 id="categoryHeading" style="margin-top:18px">My Impact Categories</h3>
+    <div class="impact-grid" id="impactCategories" style="margin-top:10px"></div>
+    <p class="caveat" id="impactCaveat">Percentages show the proportion of related checklist actions selected. They are not scientific measurements of actual environmental improvement.</p>
+  </section>
+
+  <section class="card">
+    <h2 id="ecosystemHeading">How Actions Connect to Philippine Ecosystems</h2>
+    <p class="muted" id="ecosystemIntro">Learn about environmental problems and the natural places affected by them.</p>
+    <div class="problem-grid" id="problemCards"></div>
+    <p class="muted" id="selectedProblems" aria-live="polite" style="margin-top:14px"></p>
+  </section>
+
+  <section class="card reflection">
+    <h2 id="reflectionHeading">My Environmental Commitment</h2>
+    <p class="muted" id="reflectionPrompt" style="margin:7px 0 12px">Paano makatutulong ang mga simpleng hakbang na ito upang maprotektahan ang mga ecosystem sa Pilipinas?</p>
+    <textarea id="reflectionText" placeholder="Write your reflection here..."></textarea>
+    <div class="toolbar no-print">
+      <button class="btn primary" id="saveReflection">Save Reflection</button>
+      <button class="btn outline" id="printPlan">Print My Action Plan</button>
+    </div>
+    <p class="notice" id="saveNotice" role="status"></p>
+    <div class="preview" id="reflectionPreview"><strong id="previewHeading">Saved Reflection</strong><p id="previewText"></p></div>
+  </section>
+</main>
+<footer class="footer wrap" id="footerText">Every small action matters. Be a steward of our shared home. 🌱</footer>
+
+<script>
+"use strict";
+
+/* =========================================================
+   ACTION PLAN CONTENT
+   For a new worksheet, replace this data object only.
+   Keep IDs unique. Category IDs should match impact categories.
+   ========================================================= */
+const ACTION_PLAN = {
+  title: {
+    en: "My Environmental Action Plan: Protecting Philippine Ecosystems",
+    fil: "Aking Plano sa Pangangalaga sa Kapaligiran: Pagprotekta sa mga Ekosistema ng Pilipinas",
+    bik: "An Akong Plano sa Pag-ataman sa Kapalibutan: Pagprotekta sa mga Ekosistema kan Pilipinas"
+  },
+  objective: {
+    en: "Explain how deforestation, pollution, and invasive species harm Philippine ecosystems.",
+    fil: "Ipaliwanag kung paano nakapipinsala sa mga ekosistema ng Pilipinas ang pagkakalbo ng kagubatan, polusyon, at invasive species.",
+    bik: "Ipaliwanag kun paano nakakadanyar sa mga ekosistema kan Pilipinas an pagkakalbo kan kagurangan, polusyon, asin invasive species."
+  },
+  reflectionQuestion: {
+    en: "How can these simple actions help protect ecosystems in the Philippines?",
+    fil: "Paano makatutulong ang mga simpleng hakbang na ito upang maprotektahan ang mga ekosistema sa Pilipinas?",
+    bik: "Paano makakatabang an mga simpleng aksyon na ini sa pagprotekta sa mga ekosistema sa Pilipinas?"
+  },
+  actions: [
+    {
+      id:"reforestation", category:"forest",
+      title:{en:"Reforestation",fil:"Muling Pagtatanim ng mga Puno",bik:"Pagkatanom liwat nin mga Kahoy"},
+      description:{en:"After deforestation, plant more trees to replace those that were cut down.",fil:"Pagkatapos ng pagkalbo ng kagubatan, magtanim ng mas maraming puno bilang kapalit ng mga pinutol.",bik:"Pagkatapos kan pagkakalbo kan kagurangan, magtanom nin mas dakul na kahoy bilang kapalit kan mga pinutol."},
+      impact:{en:"Helps restore forest habitats, reduce soil erosion, absorb carbon dioxide, and support biodiversity.",fil:"Nakakatulong sa pagpapanumbalik ng tirahan ng mga hayop, pagbawas ng pagguho ng lupa, pagsipsip ng carbon dioxide, at pagsuporta sa biodiversity.",bik:"Nakakatabang sa pagpapanumbalik kan mga istaran kan mga hayop, pagbawas kan pagguho kan daga, pagsipsip nin carbon dioxide, asin pagsuporta sa biodiversity."},
+      problems:["deforestation"],ecosystems:["rainforests","nativeWildlife"]
+    },
+    {
+      id:"environmental-activities",category:"forest",
+      title:{en:"Environmental Activities",fil:"Mga Gawaing Pangkapaligiran",bik:"Mga Aktibidad Para sa Kapalibutan"},
+      description:{en:"Plant more trees and join activities that promote the health of Mother Nature.",fil:"Magtanim ng mas maraming puno at lumahok sa mga gawaing nagtataguyod sa kalusugan ng Inang Kalikasan.",bik:"Magtanom nin mas dakul na kahoy asin makiayon sa mga aktibidad na nagtataguyod kan marahay na kamugtakan kan Inang Kalikasan."},
+      impact:{en:"Encourages environmental awareness, community participation, and the restoration of natural habitats.",fil:"Naghihikayat ng kamalayan sa kapaligiran, pakikilahok ng komunidad, at pagpapanumbalik ng mga likas na tirahan.",bik:"Nag-aagda nin kaaraman manungod sa kapalibutan, pakikilahok kan komunidad, asin pagpapanumbalik kan natural na mga istaran."},
+      problems:["deforestation","pollution","invasive"],ecosystems:["rainforests","mangroves","rivers"]
+    },
+    {
+      id:"reduce-paper",category:"forest",
+      title:{en:"Reduce Paper Consumption",fil:"Bawasan ang Paggamit ng Papel",bik:"Bawasan an Paggamit nin Papel"},
+      description:{en:"Reduce the use of paper and other tree-based products to help prevent excessive tree cutting.",fil:"Bawasan ang paggamit ng papel at iba pang produktong mula sa puno upang maiwasan ang labis na pagputol nito.",bik:"Bawasan an paggamit nin papel asin iba pang produkto na hali sa kahoy tanganing malikayan an sobra-sobrang pagputol kaini."},
+      impact:{en:"Helps conserve forests, reduce waste, and lower demand for products made from trees.",fil:"Nakakatulong sa pangangalaga ng kagubatan, pagbawas ng basura, at pagbawas ng pangangailangan sa mga produktong mula sa puno.",bik:"Nakakatabang sa pag-ataman kan kagurangan, pagbawas kan basura, asin pagbawas kan pangangaipo sa mga produktong hali sa kahoy."},
+      problems:["deforestation"],ecosystems:["rainforests"]
+    },
+    {
+      id:"native-plants",category:"biodiversity",
+      title:{en:"Promote Indigenous Plant Species",fil:"Itaguyod ang mga Katutubong Halaman",bik:"Itaguyod an mga Katutubong Tanom"},
+      description:{en:"Replace non-native garden plants with native Philippine species to support local pollinators and discourage invasive plants.",fil:"Palitan ang mga hindi katutubong halaman sa hardin ng mga katutubong uri sa Pilipinas upang masuportahan ang mga lokal na pollinator at makatulong na mapigilan ang pagkalat ng invasive species.",bik:"Palitan an mga tanom sa hardin na bako lokal nin mga katutubong klase sa Pilipinas tanganing masuportaran an mga lokal na pollinator asin mapugulan an pagkalat kan invasive species."},
+      impact:{en:"Supports local pollinators, protects native biodiversity, and helps prevent invasive plant species from spreading.",fil:"Sinusuportahan ang mga lokal na pollinator, pinoprotektahan ang katutubong biodiversity, at nakatutulong upang maiwasan ang pagkalat ng invasive na mga halaman.",bik:"Sinusuportaran an mga lokal na pollinator, pinoprotektaran an katutubong biodiversity, asin nakakatabang tanganing malikayan an pagkalat kan invasive na mga tanom."},
+      problems:["invasive"],ecosystems:["nativePlants","nativeWildlife"]
+    },
+    {
+      id:"waste-segregation",category:"pollution",
+      title:{en:"Waste Segregation",fil:"Wastong Paghihiwalay ng Basura",bik:"Sakto na Pagsaray kan Basura"},
+      description:{en:"Practice proper waste segregation to help reduce waste management costs and environmental pollution.",fil:"Isagawa ang wastong paghihiwalay ng basura upang makatulong na mabawasan ang gastos sa pamamahala nito at ang polusyon sa kapaligiran.",bik:"Isagibo an sakto na pagsaray kan basura tanganing makatabang sa pagbawas kan gastos sa pag-ataman kaini asin kan polusyon sa kapalibutan."},
+      impact:{en:"Reduces landfill waste, encourages recycling, and helps prevent pollution in rivers, lakes, and oceans.",fil:"Binabawasan ang basurang napupunta sa tambakan, hinihikayat ang pagre-recycle, at nakatutulong upang maiwasan ang polusyon sa mga ilog, lawa, at karagatan.",bik:"Binabawasan an basurang napupunta sa tambakan, nag-aagda nin pagre-recycle, asin nakakatabang tanganing malikayan an polusyon sa mga salog, danaw, asin dagat."},
+      problems:["pollution"],ecosystems:["rivers","mangroves","coral"]
+    },
+    {
+      id:"public-transport",category:"pollution",
+      title:{en:"Use Public Transportation",fil:"Gumamit ng Pampublikong Transportasyon",bik:"Gumamit nin Pampublikong Transportasyon"},
+      description:{en:"Use public transportation whenever possible to save fuel and reduce smoke emissions.",fil:"Gumamit ng pampublikong transportasyon kung maaari upang makatipid sa gasolina at mabawasan ang usok na nagdudulot ng polusyon.",bik:"Gumamit nin pampublikong transportasyon kun posible tanganing makatipid sa gasolina asin mabawasan an aso na nagdudulot nin polusyon."},
+      impact:{en:"Helps reduce air pollution, greenhouse gas emissions, and the environmental impact of transportation.",fil:"Nakakatulong sa pagbawas ng polusyon sa hangin, greenhouse gas emissions, at epekto ng transportasyon sa kapaligiran.",bik:"Nakakatabang sa pagbawas kan polusyon sa hangin, greenhouse gas emissions, asin epekto kan transportasyon sa kapalibutan."},
+      problems:["pollution"],ecosystems:["rivers","nativeWildlife"]
+    },
+    {
+      id:"eco-bags",category:"pollution",
+      title:{en:"Use Eco-Bags",fil:"Gumamit ng mga Eco-Bag",bik:"Gumamit nin mga Eco-Bag"},
+      description:{en:"Use reusable eco-bags instead of plastic bags and other single-use bags.",fil:"Gumamit ng mga eco-bag na maaaring ulit-ulitin sa halip na mga plastik o supot na minsanan lamang gamitin.",bik:"Gumamit nin mga eco-bag na pwedeng gamiton liwat imbes na plastik o mga supot na sarong beses sana gamiton."},
+      impact:{en:"Reduces plastic waste and helps prevent pollution in Philippine rivers, coastal areas, and marine ecosystems.",fil:"Binabawasan ang basurang plastik at nakatutulong upang maiwasan ang polusyon sa mga ilog, baybayin, at yamang-dagat ng Pilipinas.",bik:"Binabawasan an basurang plastik asin nakakatabang tanganing malikayan an polusyon sa mga salog, baybayon, asin yamang-dagat kan Pilipinas."},
+      problems:["pollution"],ecosystems:["rivers","mangroves","coral"]
+    },
+    {
+      id:"community-cleanup",category:"biodiversity",
+      title:{en:"Community Environmental Cleanup",fil:"Paglilinis ng Kapaligiran sa Komunidad",bik:"Paglinig kan Kapalibutan sa Komunidad"},
+      description:{en:"Join or organize community activities to carefully remove invasive plants and clear blocked waterways.",fil:"Sumali o mag-organisa ng mga gawaing pangkomunidad upang maingat na alisin ang invasive na mga halaman at linisin ang mga baradong daluyan ng tubig.",bik:"Makiayon o mag-organisa nin mga aktibidad sa komunidad tanganing maingat na halion an invasive na mga tanom asin linigon an mga baradong dalan nin tubig."},
+      impact:{en:"Helps control invasive species, restore natural habitats, and reduce flooding caused by blocked waterways.",fil:"Nakakatulong sa pagkontrol ng invasive species, pagpapanumbalik ng mga likas na tirahan, at pagbawas ng pagbaha dahil sa mga baradong daluyan ng tubig.",bik:"Nakakatabang sa pagkontrol kan invasive species, pagpapanumbalik kan natural na mga istaran, asin pagbawas kan pagbaha na dulot kan mga baradong dalan nin tubig."},
+      problems:["pollution","invasive"],ecosystems:["rivers","mangroves","nativeWildlife"]
+    },
+    {
+      id:"environmental-reporting",category:"biodiversity",
+      title:{en:"Environmental Reporting",fil:"Pag-uulat ng mga Suliraning Pangkapaligiran",bik:"Pagreport kan mga Problema sa Kapalibutan"},
+      description:{en:"Use local environmental tracking apps or report invasive species you observe to the proper authorities.",fil:"Gumamit ng mga lokal na app para sa pagsubaybay sa kalikasan o iulat sa kinauukulan ang mga napansing invasive species.",bik:"Gumamit nin lokal na mga app para sa pagsubaybay sa kapalibutan o ireport sa mga kinauukulan an mga invasive species na namasid."},
+      impact:{en:"Supports early detection, monitoring, and faster environmental action to prevent invasive species from spreading.",fil:"Sinusuportahan ang maagang pagtukoy at pagsubaybay upang agad na maaksyunan at mapigilan ang pagkalat ng invasive species.",bik:"Sinusuportaran an maagang pagtuklas asin pagsubaybay tanganing maagap na maaksyunan asin mapugulan an pagkalat kan invasive species."},
+      problems:["invasive"],ecosystems:["nativePlants","nativeWildlife"]
+    }
+  ],
+  categories: [
+    {id:"forest",label:{en:"Forest Protection",fil:"Proteksiyon sa Kagubatan",bik:"Proteksyon sa Kagurangan"}},
+    {id:"pollution",label:{en:"Pollution Reduction",fil:"Pagbawas ng Polusyon",bik:"Pagbawas kan Polusyon"}},
+    {id:"biodiversity",label:{en:"Biodiversity Protection",fil:"Proteksiyon sa Biodiversity",bik:"Proteksyon sa Biodiversity"}}
+  ]
+};
+
+/* Interface translations. Missing translations fall back to English. */
+const UI = {
+ en:{
+  eyebrow:"LEARN • ACT • PROTECT",intro:"Small actions can make a big difference. Choose the steps you can take to care for our forests, waterways, wildlife, and communities.",
+  objective:"Learning Objective",progress:"My Action Plan Progress",progressHint:"Your progress updates automatically as you select or clear actions.",
+  total:"Total Actions",completed:"Completed",remaining:"Remaining",completion:"Completion",checklist:"My Environmental Actions",checklistHint:"Check each action you have completed or commit to doing.",
+  selectAll:"Select All",clearAll:"Clear All",reset:"Reset Checklist",impact:"My Environmental Impact",impactHint:"See how your selected actions can help address environmental problems.",
+  categoryHeading:"My Impact Categories",caveat:"Percentages show the proportion of related checklist actions selected. They are not scientific measurements of actual environmental improvement.",
+  ecosystem:"How Actions Connect to Philippine Ecosystems",ecosystemIntro:"Learn about environmental problems and the natural places affected by them.",
+  reflection:"My Environmental Commitment",reflectionHint:"Write a personal response to the reflection question below.",save:"Save Reflection",print:"Print My Action Plan",preview:"Saved Reflection",
+  noActions:"Choose one or more actions to generate your environmental impact summary.",allDone:"🎉 Congratulations! You have completed every action in your plan.",
+  remainingUnit:"actions remaining",completedWord:"completed",of:"of",confirmReset:"Reset the checklist and clear your saved reflection? This cannot be undone.",
+  saved:"✓ Your reflection and checklist progress have been saved on this device.",savedAuto:"Your progress is saved automatically on this device.",
+  problemTitle:{deforestation:"Deforestation",pollution:"Pollution",invasive:"Invasive Species"},
+  problemText:{
+   deforestation:"Cutting down forests can destroy habitats, expose soil to erosion, and reduce biodiversity. Philippine tropical rainforests provide homes for many native plants and animals.",
+   pollution:"Waste and emissions can contaminate rivers and lakes, harm wildlife, and damage mangroves and coral reefs. Plastic waste can also reach coastal and marine habitats.",
+   invasive:"Invasive species can spread quickly, compete with native plants and animals, and disturb ecosystem balance. Native plants support local pollinators and wildlife."
+  },
+  ecosystems:"Examples of Philippine ecosystems",ecoNames:{rainforests:"Tropical rainforests",mangroves:"Mangrove forests",rivers:"Rivers and lakes",coral:"Coral reefs",nativePlants:"Native plants",nativeWildlife:"Native wildlife"},
+  problemsAddressed:"Environmental problems addressed by your selected actions:",selected:"Your selected actions:",noneSelected:"No actions selected yet.",language:"Language / Wika",
+  commitmentPlaceholder:"Write your reflection here...",footer:"Every small action matters. Be a steward of our shared home. 🌱",
+  summaryStart:"You selected",summaryEnd:"Your actions can help",benefits:{deforestation:"protect forests and reduce pressure on tree resources",pollution:"reduce pollution and waste in communities and waterways",invasive:"protect native species and help prevent invasive species from spreading"},
+  category:"Category",impactLabel:"Possible impact"
+ },
+ fil:{
+  eyebrow:"MATUTO • KUMILOS • MAG-ALAGA",intro:"Ang maliliit na pagkilos ay maaaring magdulot ng malaking pagbabago. Piliin ang mga hakbang na kaya mong gawin upang pangalagaan ang kagubatan, katubigan, mga hayop, at komunidad.",
+  objective:"Layunin sa Pagkatuto",progress:"Progreso ng Aking Plano",progressHint:"Awtomatikong naa-update ang progreso tuwing pipili o mag-aalis ka ng tsek.",
+  total:"Kabuuang Gawain",completed:"Natapos",remaining:"Natitira",completion:"Pagkumpleto",checklist:"Aking mga Gawaing Pangkapaligiran",checklistHint:"Lagyan ng tsek ang mga gawaing natapos mo o nangangako kang gagawin.",
+  selectAll:"Piliin Lahat",clearAll:"Alisin Lahat ng Tsek",reset:"I-reset ang Checklist",impact:"Aking Epekto sa Kapaligiran",impactHint:"Tingnan kung paano nakatutulong ang iyong mga napiling gawain sa pagtugon sa mga suliraning pangkapaligiran.",
+  categoryHeading:"Mga Larangan ng Aking Ambag",caveat:"Ipinapakita ng mga porsiyento ang bahagdan ng mga kaugnay na gawaing napili. Hindi ito siyentipikong sukat ng aktuwal na pagbabago sa kapaligiran.",
+  ecosystem:"Ugnayan ng mga Gawain sa mga Ekosistema ng Pilipinas",ecosystemIntro:"Alamin ang mga suliraning pangkapaligiran at ang mga likas na lugar na naaapektuhan.",
+  reflection:"Aking Pangako sa Kapaligiran",reflectionHint:"Isulat ang iyong sariling sagot sa tanong sa ibaba.",save:"I-save ang Pagninilay",print:"I-print ang Aking Plano",preview:"Naka-save na Pagninilay",
+  noActions:"Pumili ng isa o higit pang gawain upang mabuo ang buod ng iyong epekto sa kapaligiran.",allDone:"🎉 Binabati kita! Natapos mo na ang lahat ng gawain sa iyong plano.",
+  remainingUnit:"gawaing natitira",completedWord:"natapos",of:"sa",confirmReset:"I-reset ang checklist at burahin ang naka-save na pagninilay? Hindi na ito maibabalik.",
+  saved:"✓ Naka-save sa device na ito ang iyong pagninilay at progreso ng checklist.",savedAuto:"Awtomatikong sine-save sa device na ito ang iyong progreso.",
+  problemTitle:{deforestation:"Pagkakalbo ng Kagubatan",pollution:"Polusyon",invasive:"Invasive Species"},
+  problemText:{
+   deforestation:"Ang pagputol ng mga puno ay maaaring sumira sa tirahan ng mga hayop, magdulot ng pagguho ng lupa, at magpababa ng biodiversity. Tirahan ng maraming katutubong halaman at hayop ang mga tropikal na kagubatan ng Pilipinas.",
+   pollution:"Maaaring dumumi ang mga ilog at lawa dahil sa basura at usok, mapinsala ang mga hayop, at masira ang mga bakawan at bahura. Maaari ring makarating ang plastik sa mga baybayin at dagat.",
+   invasive:"Mabilis kumalat ang invasive species at maaaring maagawan ng tirahan at pagkain ang mga katutubong halaman at hayop. Sinusuportahan ng mga katutubong halaman ang mga lokal na pollinator at wildlife."
+  },
+  ecosystems:"Mga halimbawa ng ekosistema sa Pilipinas",ecoNames:{rainforests:"Mga tropikal na kagubatan",mangroves:"Mga bakawan",rivers:"Mga ilog at lawa",coral:"Mga bahura",nativePlants:"Mga katutubong halaman",nativeWildlife:"Mga katutubong hayop"},
+  problemsAddressed:"Mga suliraning tinutugunan ng iyong mga napiling gawain:",selected:"Mga napili mong gawain:",noneSelected:"Wala ka pang napipiling gawain.",language:"Wika / Language",
+  commitmentPlaceholder:"Isulat dito ang iyong pagninilay...",footer:"Mahalaga ang bawat maliit na pagkilos. Maging tagapangalaga ng ating iisang tahanan. 🌱",
+  summaryStart:"Pumili ka ng",summaryEnd:"Makakatulong ang iyong mga gawain upang",benefits:{deforestation:"mapangalagaan ang kagubatan at mabawasan ang paggamit ng mga produktong mula sa puno",pollution:"mabawasan ang polusyon at basura sa mga komunidad at daluyan ng tubig",invasive:"maprotektahan ang mga katutubong species at mapigilan ang pagkalat ng invasive species"},
+  category:"Kategorya",impactLabel:"Posibleng epekto"
+ },
+ bik:{
+  eyebrow:"MAG-ARAM • MAG-AKSYON • MAG-ATAMAN",intro:"An sadit na mga aksyon pwedeng magdara nin dakulang pagbabago. Pilia an mga hakbang na kaya mong gibuhon para atamanon an kagurangan, katubigan, mga hayop, asin komunidad.",
+  objective:"Katuyuhan sa Pag-adal",progress:"Progreso kan Akong Plano",progressHint:"Awtomatikong nagbabago an progreso kun may pipiliahon o hahalion kang tsek.",
+  total:"Gabos na Aksyon",completed:"Natapos",remaining:"Natitira",completion:"Pagkumpleto",checklist:"Mga Aksyon Ko Para sa Kapalibutan",checklistHint:"Butangi nin tsek an mga aksyon na natapos mo na o nangangako kang gigibuhon.",
+  selectAll:"Pilia Gabos",clearAll:"Halia Gabos na Tsek",reset:"I-reset an Checklist",impact:"Epekto kan Akong mga Aksyon",impactHint:"Hilingon kun paano nakakatabang an mga pinili mong aksyon sa mga problema sa kapalibutan.",
+  categoryHeading:"Mga Kategorya kan Akong Ambag",caveat:"Ipinapahiling kan porsyento an parte kan mga kaugnay na aksyon na pinili mo. Dai ini siyentipikong sukat kan tunay na pagbabago sa kapalibutan.",
+  ecosystem:"Koneksyon kan mga Aksyon sa mga Ekosistema kan Pilipinas",ecosystemIntro:"Aramon an mga problema sa kapalibutan asin an mga natural na lugar na naaapektaran kaini.",
+  reflection:"Akong Panuga sa Kapalibutan",reflectionHint:"Isurat an saimong sadiring simbag sa hapot sa ibaba.",save:"I-save an Pagninilay",print:"I-print an Akong Plano",preview:"Naka-save na Pagninilay",
+  noActions:"Pilia an sarong aksyon o mas dakul pa tanganing mabuo an buod kan epekto kan saimong mga aksyon sa kapalibutan.",allDone:"🎉 Marhay na trabaho! Natapos mo na an gabos na aksyon sa saimong plano.",
+  remainingUnit:"aksiyon an natitira",completedWord:"natapos",of:"sa",confirmReset:"I-reset an checklist asin halion an naka-save na pagninilay? Dai na ini maibabalik.",
+  saved:"✓ Naka-save sa device na ini an saimong pagninilay asin progreso kan checklist.",savedAuto:"Awtomatikong sine-save sa device na ini an saimong progreso.",
+  problemTitle:{deforestation:"Pagkakalbo kan Kagurangan",pollution:"Polusyon",invasive:"Invasive Species"},
+  problemText:{
+   deforestation:"An pagputol nin mga kahoy pwedeng makasira sa mga istaran kan mga hayop, magdara nin pagguho kan daga, asin magpababa kan biodiversity. Istaran nin dakul na katutubong tanom asin hayop an mga tropikal na kagurangan kan Pilipinas.",
+   pollution:"An basura asin usok pwedeng magdumi sa mga salog asin danaw, makadanyar sa mga hayop, asin makasira sa mga bakawan asin bahura. An plastik pwedeng umabot sa mga baybayon asin dagat.",
+   invasive:"An invasive species pwedeng maglapnag nin madali asin makipagkompetensya sa mga katutubong tanom asin hayop. An mga katutubong tanom nakakatabang sa mga lokal na pollinator asin wildlife."
+  },
+  ecosystems:"Mga halimbawa nin ekosistema sa Pilipinas",ecoNames:{rainforests:"Mga tropikal na kagurangan",mangroves:"Mga bakawan",rivers:"Mga salog asin danaw",coral:"Mga bahura",nativePlants:"Mga katutubong tanom",nativeWildlife:"Mga katutubong hayop"},
+  problemsAddressed:"Mga problema sa kapalibutan na tinutugunan kan pinili mong aksyon:",selected:"Mga aksyon na pinili mo:",noneSelected:"Mayong aksyon na napipili pa.",language:"Lengwahe / Language",
+  commitmentPlaceholder:"Isurat digdi an saimong pagninilay...",footer:"Importante an kada sadit na aksyon. Magin tagapag-ataman kan satong haraning harong. 🌱",
+  summaryStart:"Nagpili ka nin",summaryEnd:"An saimong mga aksyon makakatabang na",benefits:{deforestation:"atamanon an kagurangan asin bawasan an paggamit nin mga produkto na hali sa kahoy",pollution:"bawasan an polusyon asin basura sa mga komunidad asin dalan nin tubig",invasive:"protektaran an mga katutubong species asin pugulan an paglapnag kan invasive species"},
+  category:"Kategorya",impactLabel:"Posibleng epekto"
+ }
+};
+
+const STORAGE_KEY="reusableActionPlan_v1";
+const LANG_KEY="reusableActionPlanLanguage";
+let currentLanguage="en";
+const $=id=>document.getElementById(id);
+const text=(obj,lang=currentLanguage)=>obj?.[lang] ?? obj?.en ?? "";
+const esc=value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const checked=new Set();
+let reflectionSaved="";
+
+function loadSaved(){
+ try{
+  const data=JSON.parse(localStorage.getItem(STORAGE_KEY)||"{}");
+  if(Array.isArray(data.checked)) data.checked.forEach(id=>{if(ACTION_PLAN.actions.some(a=>a.id===id))checked.add(id)});
+  reflectionSaved=typeof data.reflection==="string"?data.reflection:"";
+ }catch(e){}
+ try{currentLanguage=localStorage.getItem(LANG_KEY)||"en"}catch(e){}
+ if(!["en","fil","bik"].includes(currentLanguage))currentLanguage="en";
+ $("languageSelect").value=currentLanguage;
+ $("reflectionText").value=reflectionSaved;
+}
+function persist(){
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify({checked:[...checked],reflection:reflectionSaved}))}catch(e){}
+}
+function categoryLabel(id){const item=ACTION_PLAN.categories.find(c=>c.id===id);return item?text(item.label):id}
+function renderCards(){
+ const grid=$("actionGrid");
+ grid.innerHTML=ACTION_PLAN.actions.map((a,index)=>`
+  <article class="action ${checked.has(a.id)?"checked":""}" data-action="${esc(a.id)}">
+   <div class="action-top">
+    <input class="check" type="checkbox" id="check-${esc(a.id)}" data-id="${esc(a.id)}" ${checked.has(a.id)?"checked":""} aria-label="${esc(text(a.title))}">
+    <div style="min-width:0;flex:1">
+     <label class="action-title" for="check-${esc(a.id)}"><span class="number">${index+1}.</span>${esc(text(a.title))}</label><br>
+     <span class="tag">${esc(categoryLabel(a.category))}</span>
+    </div>
+   </div>
+   <p class="action-desc">${esc(text(a.description))}</p>
+   <p class="action-impact"><b>${esc(UI[currentLanguage].impactLabel)}:</b> ${esc(text(a.impact))}</p>
+  </article>`).join("");
+ grid.querySelectorAll("input[type=checkbox]").forEach(input=>input.addEventListener("change",()=>{
+  if(input.checked)checked.add(input.dataset.id);else checked.delete(input.dataset.id);
+  persist();updateDashboard();
+ }));
+}
+function renderImpactCategories(){
+ $("impactCategories").innerHTML=ACTION_PLAN.categories.map(c=>`
+  <div class="impact-item">
+   <div class="impact-head"><span>${esc(text(c.label))}</span><span id="impact-${esc(c.id)}-value">0%</span></div>
+   <div class="mini-track"><div class="mini-fill ${c.id==="forest"?"forest":c.id==="pollution"?"pollution":"bio"}" id="impact-${esc(c.id)}-bar"></div></div>
+  </div>`).join("");
+}
+function renderProblemCards(){
+ const ui=UI[currentLanguage];
+ const items=[["deforestation","🌳"],["pollution","💧"],["invasive","🦋"]];
+ $("problemCards").innerHTML=items.map(([id,emoji])=>`
+  <article class="problem"><div class="emoji">${emoji}</div><h3>${esc(ui.problemTitle[id])}</h3><p>${esc(ui.problemText[id])}</p></article>`).join("");
+}
+function updateDashboard(){
+ const total=ACTION_PLAN.actions.length,done=checked.size,remaining=total-done,pct=total?Math.round(done/total*100):0;
+ $("totalCount").textContent=total;$("doneCount").textContent=done;$("remainingCount").textContent=remaining;$("percentCount").textContent=pct+"%";
+ $("progressFill").style.width=pct+"%";$("mainProgress").setAttribute("aria-valuenow",pct);
+ $("progressCaption").textContent=pct+"% "+(currentLanguage==="en"?"completed":currentLanguage==="fil"?"kumpleto":"kumpleto");
+ $("fractionCaption").textContent=done+" / "+total+" "+(currentLanguage==="en"?"actions":currentLanguage==="fil"?"gawain":"aksiyon");
+ $("completeMessage").classList.toggle("show",total>0&&done===total);
+ $("completeMessage").textContent=UI[currentLanguage].allDone;
+ document.querySelectorAll(".action").forEach(card=>card.classList.toggle("checked",checked.has(card.dataset.action)));
+ ACTION_PLAN.categories.forEach(cat=>{
+  const related=ACTION_PLAN.actions.filter(a=>a.category===cat.id);
+  const selected=related.filter(a=>checked.has(a.id)).length;
+  const value=related.length?Math.round(selected/related.length*100):0;
+  const bar=$("impact-"+cat.id+"-bar"),label=$("impact-"+cat.id+"-value");
+  if(bar)bar.style.width=value+"%";if(label)label.textContent=value+"%";
+ });
+ updateSummary();
+ persist();
+}
+function updateSummary(){
+ const ui=UI[currentLanguage],selected=ACTION_PLAN.actions.filter(a=>checked.has(a.id));
+ const summary=$("dynamicSummary"),list=$("selectedActionsList");
+ if(!selected.length){summary.textContent=ui.noActions;list.hidden=true;list.innerHTML="";$("selectedProblems").textContent=ui.noneSelected;return}
+ const problems=new Set(selected.flatMap(a=>a.problems||[]));
+ const benefits=[...problems].map(p=>ui.benefits[p]).filter(Boolean);
+ const names=selected.map(a=>text(a.title));
+ const joinNames=names.length===1?names[0]:names.slice(0,-1).join(", ")+(currentLanguage==="en"?" and ":currentLanguage==="fil"?" at ":" asin ")+names[names.length-1];
+ summary.textContent=ui.summaryStart+" "+selected.length+" "+(currentLanguage==="en"?"actions":currentLanguage==="fil"?"gawain":"aksiyon")+": "+joinNames+". "+ui.summaryEnd+" "+benefits.join("; ")+".";
+ list.hidden=false;list.innerHTML=selected.map(a=>"<li>"+esc(text(a.title))+"</li>").join("");
+ const problemLabels=[...problems].map(p=>ui.problemTitle[p]).filter(Boolean);
+ $("selectedProblems").textContent=ui.problemsAddressed+" "+(problemLabels.length?problemLabels.join(", "):"—");
+}
+function applyLanguage(lang){
+ currentLanguage=lang;
+ const ui=UI[lang]||UI.en;
+ document.documentElement.lang=lang==="fil"?"fil":lang==="bik"?"bik":"en";
+ $("eyebrow").textContent=ui.eyebrow;$("pageTitle").textContent=text(ACTION_PLAN.title);
+ $("heroIntro").textContent=ui.intro;$("objectiveHeading").textContent=ui.objectiveHeading||ui.objective;
+ $("objectiveText").textContent=text(ACTION_PLAN.objective);
+ $("progressHeading").textContent=ui.progress;$("progressHint").textContent=ui.progressHint;
+ $("totalLabel").textContent=ui.total;$("doneLabel").textContent=ui.completed;$("remainingLabel").textContent=ui.remaining;$("percentLabel").textContent=ui.completion;
+ $("checklistHeading").textContent=ui.checklist;$("checklistHint").textContent=ui.checklistHint;
+ $("selectAll").textContent=ui.selectAll;$("clearAll").textContent=ui.clearAll;$("resetPlan").textContent=ui.reset;
+ $("impactHeading").textContent=ui.impact;$("impactHint").textContent=ui.impactHint;$("categoryHeading").textContent=ui.categoryHeading;$("impactCaveat").textContent=ui.caveat;
+ $("ecosystemHeading").textContent=ui.ecosystem;$("ecosystemIntro").textContent=ui.ecosystemIntro;
+ $("reflectionHeading").textContent=ui.reflection;$("reflectionPrompt").textContent=text(ACTION_PLAN.reflectionQuestion);
+ $("reflectionText").placeholder=ui.commitmentPlaceholder;$("saveReflection").textContent=ui.save;$("printPlan").textContent=ui.print;
+ $("previewHeading").textContent=ui.preview;$("footerText").textContent=ui.footer;$("languageLabel").textContent=ui.language;
+ $("completeMessage").textContent=ui.allDone;
+ renderCards();renderImpactCategories();renderProblemCards();updateDashboard();renderPreview();
+ try{localStorage.setItem(LANG_KEY,lang)}catch(e){}
+}
+function renderPreview(){
+ const preview=$("reflectionPreview");
+ if(reflectionSaved.trim()){preview.classList.add("show");$("previewText").textContent=reflectionSaved}
+ else{preview.classList.remove("show");$("previewText").textContent=""}
+}
+$("languageSelect").addEventListener("change",e=>applyLanguage(e.target.value));
+$("selectAll").addEventListener("click",()=>{ACTION_PLAN.actions.forEach(a=>checked.add(a.id));renderCards();updateDashboard()});
+$("clearAll").addEventListener("click",()=>{checked.clear();renderCards();updateDashboard()});
+$("resetPlan").addEventListener("click",()=>{
+ if(confirm(UI[currentLanguage].confirmReset)){checked.clear();reflectionSaved="";$("reflectionText").value="";$("saveNotice").textContent="";renderCards();updateDashboard();renderPreview();persist()}
+});
+$("saveReflection").addEventListener("click",()=>{
+ reflectionSaved=$("reflectionText").value;persist();renderPreview();$("saveNotice").textContent=UI[currentLanguage].saved;
+});
+$("reflectionText").addEventListener("input",()=>{reflectionSaved=$("reflectionText").value;persist();renderPreview()});
+$("printPlan").addEventListener("click",()=>window.print());
+
+loadSaved();
+applyLanguage(currentLanguage);
+</script>
+</body>
+</html>
